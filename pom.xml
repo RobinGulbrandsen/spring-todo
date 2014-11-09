@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>no.rg</groupId>
 	<artifactId>todo-app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-
+	<version>1.0</version>
+	
 	<!-- Shared version number properties -->
 	<properties>
 		<org.springframework.version>4.1.1.RELEASE</org.springframework.version>
@@ -179,6 +179,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>todo</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
