@@ -25,16 +25,16 @@
          <props>
             <prop key="hibernate.hbm2ddl.validate"></prop>
             <prop key="hibernate.show_sql">true</prop>
-            <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+            <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop> <!--  org.hibernate.dialect.SQLServerDialect -->
          </props>
       </property>
    </bean>
  
    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-      <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-      <property name="url" value="jdbc:mysql://localhost:3306/todo" />
-      <property name="username" value="root" />
-      <property name="password" value="" />
+      <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+      <property name="url" value="jdbc:sqlserver://u01gbb6y48.database.windows.net:1433;database=todo" />
+      <property name="username" value="todo" />
+      <property name="password" value="Database1234!" />
    </bean>
  
    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
